@@ -1,7 +1,7 @@
-# slowloris.py - Simple slowloris in Python
+# dosy.py - Simple dos tool in Python
 
-## What is Slowloris?
-Slowloris is basically an HTTP Denial of Service attack that affects threaded servers. It works like this:
+## What is Dosy?
+Dosy is basically an HTTP Denial of Service attack that affects threaded servers. It works like this:
 
 1. We start making lots of HTTP requests.
 2. We send headers periodically (every ~15 seconds) to keep the connections open.
@@ -14,12 +14,12 @@ This exhausts the servers thread pool and the server can't reply to other people
 If you found this work useful, please cite it as
 
 ```bibtex
-@article{gkbrkslowloris,
-  title = "Slowloris",
-  author = "Gokberk Yaltirakli",
+@article{netslutter#Dosy,
+  title = "Dosy",
+  author = "Netslutter and Gokberk Yaltirakli",
   journal = "github.com",
-  year = "2015",
-  url = "https://github.com/gkbrk/slowloris"
+  year = "2021",
+  url = "https://github.com/netsluter/dosy"
 }
 ```
 
@@ -27,16 +27,16 @@ If you found this work useful, please cite it as
 
 You can clone the git repo or install using **pip**. Here's how you run it.
 
-* `sudo pip3 install slowloris`
-* `slowloris example.com`
+* `sudo pip3 install dosy`
+* `dosy example.com`
 
-That's all it takes to install and run slowloris.py.
+That's all it takes to install and run dosy.py.
 
 If you want to clone using git instead of pip, here's how you do it.
 
-* `git clone https://github.com/gkbrk/slowloris.git`
-* `cd slowloris`
-* `python3 slowloris.py example.com`
+* `git clone https://github.com/netslutter/dosy.git`
+* `cd dosy`
+* `python3 dosy.py example.com`
 
 ### SOCKS5 proxy support
 
@@ -47,9 +47,9 @@ However, if you plan on using the `-x` option in order to use a SOCKS5 proxy for
 You can then use the `-x` option to activate SOCKS5 support and the `--proxy-host` and `--proxy-port` option to specify the SOCKS5 proxy host and its port, if they are different from the standard `127.0.0.1:8080`.
 
 ## Configuration options
-It is possible to modify the behaviour of slowloris with command-line
+It is possible to modify the behaviour of dosy with command-line
 arguments. In order to get an up-to-date help document, just run
-`slowloris -h`.
+`dosy -h`.
 
 * -p, --port
 * * Port of webserver, usually 80
