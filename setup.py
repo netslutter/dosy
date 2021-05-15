@@ -1,14 +1,14 @@
 from distutils.core import setup
 
 setup(
-    name="Slowloris",
-    py_modules=["slowloris"],
-    entry_points={"console_scripts": ["slowloris=slowloris:main"]},
+    name="dosy",
+    py_modules=["dosy"],
+    entry_points={"console_scripts": ["dosy=dosy:main"]},
     version="0.2.3",
-    description="Low bandwidth DoS tool. Slowloris rewrite in Python.",
-    author="Gokberk Yaltirakli",
-    author_email="opensource@gkbrk.com",
-    url="https://github.com/gkbrk/slowloris",
-    keywords=["dos", "http", "slowloris"],
+    description="DOS attack - Slow down Connection",
+    author="Network Slutter and Gokberk Yaltirakli",
+    author_email="netslutter@pm.me",
+    url="https://github.com/netslutter/dosy",
+    keywords=["dos", "http", "dosy"],
     license="MIT",
 )
